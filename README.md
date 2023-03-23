@@ -8,7 +8,7 @@ that maps from the feature name to the feature value. For each representation, t
 exactly 1 feature per unique token in the vocabulary, but the value of that feature change.
 
 ## Document Representations
-1. Binary Bag-of-Words: Each document should be represented with binary features,
+1. Binary Bag-of-Words: Each document is represented with binary features,
 one for each token in the vocabulary.
 
 2. Count Bag-of-Words Instead of having a binary feature for each token, I
