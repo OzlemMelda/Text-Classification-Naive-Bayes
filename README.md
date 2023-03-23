@@ -38,5 +38,21 @@ where k is a hyperparameter which controls the strength of the smoothing.
 The following equation is implemented to make prediction: \
 ![image](https://user-images.githubusercontent.com/53811688/227085790-43068b04-3c73-4b4d-8c95-9c22c6eed93f.png)
 
+##  Experiment Results
+
+![image](https://user-images.githubusercontent.com/53811688/227086154-a90aacb6-1b9d-49f8-85f9-1b9ec0600315.png) 
+
+We can see that the most complicated document representation did not get the best results.
+k helps us in a way that posterior probability does not suddenly drops to zero
+when there is an additional word not in vocabulary and has p(y|v) = 0. It does
+this by giving this word a small non-zero probability for both classes.
+As the value of k goes to infinity, the p(v|y) will go constant
+value which is 1/|V |. \
+So, our conditional probability p(v|y) (likelihood) will be very similar. Then,
+our posterior probabilities p(y|v) will also be similar since posterior = likelihood\*prior.
+I assume priories are very close. Then, our validation accuracies will
+be around 0.5 for balanced data set for the binary class problem.
+
+
 
 
