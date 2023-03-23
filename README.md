@@ -35,5 +35,8 @@ I implement Laplace smoothing on P(v | y) as follows:\
 ![image](https://user-images.githubusercontent.com/53811688/227085233-1e890956-cc77-465c-8f84-f2af76de6410.png)
 where k is a hyperparameter which controls the strength of the smoothing.
 
+The following equation is implemented to make prediction: \
+![image](https://user-images.githubusercontent.com/53811688/227085790-43068b04-3c73-4b4d-8c95-9c22c6eed93f.png)
+
 
 
