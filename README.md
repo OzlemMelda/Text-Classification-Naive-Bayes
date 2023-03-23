@@ -1,11 +1,12 @@
 # Text-Classification-Naive-Bayes
 Naive Bayes-based models to do text classification on IMDB dataset
 
+You can find a sample of dataset in ./data/imdb/
+
 I experiment with three different ways to represent the documents. “Representation”
 means how you convert the raw text of a document to a feature vector. 
 I use a sparse representation of the feature vectors which is based on a dictionary
-that maps from the feature name to the feature value. For each representation, there is
-exactly 1 feature per unique token in the vocabulary, but the value of that feature change.
+that maps from the feature name to the feature value. 
 
 ## Document Representations
 1. Binary Bag-of-Words: Each document is represented with binary features,
